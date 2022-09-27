@@ -1,0 +1,64 @@
+27.09.2022 16:22:18 | Debug | settings readed from json
+27.09.2022 16:22:18 | Debug | settings readed sucessful
+27.09.2022 16:22:18 | Debug | Settings object:
+Destination : c:\dest
+Source : c:\1
+Source : c:\2
+Source : c:\3
+Loggersettings object:
+ErrorLevel: Debug
+out File: log.txt
+
+27.09.2022 16:22:18 | Info | backupper load success
+27.09.2022 16:22:18 | Debug |  start opening c:/1/11.txt to emulate business error
+27.09.2022 16:22:18 | Debug | c:/1/11.txt opened
+27.09.2022 16:22:18 | Debug | backup method was invoked
+27.09.2022 16:22:18 | Info | starting backup
+27.09.2022 16:22:18 | Debug | created directory c:\dest\27.09.2022_04.22
+27.09.2022 16:22:18 | Debug | start to backup directory c:\1
+27.09.2022 16:22:18 | Debug | created directory c:\dest\27.09.2022_04.22\1
+27.09.2022 16:22:18 | Error | backup file c:\1\11.txt failed with error: Процесс не может получить доступ к файлу "c:\1\11.txt", так как этот файл используется другим процессом.
+27.09.2022 16:22:18 | Debug | directory c:\1 backuped
+27.09.2022 16:22:18 | Debug | start to backup directory c:\2
+27.09.2022 16:22:18 | Debug | created directory c:\dest\27.09.2022_04.22\2
+27.09.2022 16:22:18 | Debug | file c:\2\1.xlsx was backuped
+27.09.2022 16:22:18 | Debug | file c:\2\2.txt was backuped
+27.09.2022 16:22:18 | Debug | directory c:\2 backuped
+27.09.2022 16:22:18 | Debug | start to backup directory c:\3
+27.09.2022 16:22:18 | Debug | created directory c:\dest\27.09.2022_04.22\3
+27.09.2022 16:22:18 | Debug | file c:\3\3.txt was backuped
+27.09.2022 16:22:18 | Debug | file c:\3\333.txt was backuped
+27.09.2022 16:22:18 | Debug | directory c:\3 backuped
+27.09.2022 16:22:18 | Info | backup done
+27.09.2022 16:28:46 | Debug | settings readed from json
+27.09.2022 16:28:46 | Debug | settings readed sucessful
+27.09.2022 16:28:46 | Debug | Settings object:
+Destination : c:\dest
+Source : c:\1
+Source : c:\2
+Source : c:\3
+Loggersettings object:
+ErrorLevel: Debug
+out File: log.txt
+
+27.09.2022 16:28:46 | Info | backupper load success
+27.09.2022 16:28:46 | Debug |  start opening c:/1/11.txt to emulate business error
+27.09.2022 16:28:46 | Debug | c:/1/11.txt opened
+27.09.2022 16:28:46 | Debug | backup method was invoked
+27.09.2022 16:28:46 | Info | starting backup
+27.09.2022 16:28:46 | Debug | created directory c:\dest\27.09.2022_04.28
+27.09.2022 16:28:46 | Debug | start to backup directory c:\1
+27.09.2022 16:28:46 | Debug | created directory c:\dest\27.09.2022_04.28\1
+27.09.2022 16:28:46 | Error | backup file c:\1\11.txt failed with error: Процесс не может получить доступ к файлу "c:\1\11.txt", так как этот файл используется другим процессом.
+27.09.2022 16:28:46 | Debug | directory c:\1 backuped
+27.09.2022 16:28:46 | Debug | start to backup directory c:\2
+27.09.2022 16:28:46 | Debug | created directory c:\dest\27.09.2022_04.28\2
+27.09.2022 16:28:46 | Debug | file c:\2\1.xlsx was backuped
+27.09.2022 16:28:46 | Debug | file c:\2\2.txt was backuped
+27.09.2022 16:28:46 | Debug | directory c:\2 backuped
+27.09.2022 16:28:46 | Debug | start to backup directory c:\3
+27.09.2022 16:28:46 | Debug | created directory c:\dest\27.09.2022_04.28\3
+27.09.2022 16:28:46 | Debug | file c:\3\3.txt was backuped
+27.09.2022 16:28:46 | Debug | file c:\3\333.txt was backuped
+27.09.2022 16:28:46 | Debug | directory c:\3 backuped
+27.09.2022 16:28:46 | Info | backup done

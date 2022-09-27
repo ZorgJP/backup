@@ -1,0 +1,6 @@
+log.txt
+Debug
+c:/dest
+c:/1
+c:/2
+c:/3

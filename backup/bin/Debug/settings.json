@@ -1,0 +1,12 @@
+{
+  "Destination": "c:\\dest",
+  "Sources": [
+    "c:\\1",
+    "c:\\2",
+    "c:\\3"
+  ],
+  "Log": {
+    "ErrorLevel": 0,
+    "OutFileName": "log.txt"
+  }
+}
