@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace backup
 {
@@ -23,7 +25,7 @@ namespace backup
             {
                 var fName = File.ReadAllLines(fileName).First();
                 var strErr = File.ReadAllLines(fileName).Skip(1).First();
-                var logger = new LoggerSettings();// new Log(fName, (ErrorLogLevel)Enum.Parse(typeof(ErrorLogLevel), strErr));
+                var logger = new LoggerSettings();// (fName, (ErrorLogLevel)Enum.Parse(typeof(ErrorLogLevel), strErr));
                 Logger.Debug("Logger was created from file");
                 return logger;
             }

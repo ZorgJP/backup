@@ -25,7 +25,7 @@ namespace backup
             {
                 var options = new JsonSerializerOptions
                 {
-                    Converters = { new DirectoryConverter() }
+                    Converters = { new JsonDirectoryInfoConverter() }
                 };
                 var settings = JsonSerializer
                     .Deserialize<Settings>(File.ReadAllText(fileName), options);

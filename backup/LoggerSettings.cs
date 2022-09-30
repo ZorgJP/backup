@@ -10,7 +10,7 @@ namespace backup
     [Serializable]
     public class LoggerSettings
     {
-        public ErrorLogLevel ErrorLevel { get; set; }
+        public ErrorLogLevel LoggerLevel { get; set; }
         public string OutFileName { get; set; }
         private TextWriter DefaultWriter { get; set; }
 
@@ -19,12 +19,12 @@ namespace backup
         public LoggerSettings(TextWriter writer, ErrorLogLevel level)
         {
             DefaultWriter = writer;
-            ErrorLevel = level;
+            LoggerLevel = level;
         }
 
-        //public Log(string fileName = null, ErrorLogLevel level = ErrorLogLevel.Debug, TextWriter writer = null)
+        //public LoggerSettings(string fileName = null, ErrorLogLevel level = ErrorLogLevel.Debug, TextWriter writer = null)
         //{
-        //    ErrorLevel = level;
+        //    LoggerLevel = level;
         //    OutFileName = fileName;
         //    DefaultWriter = writer ?? Console.Out;
         //}
@@ -35,7 +35,7 @@ namespace backup
 
         private void WriteIfPossible(ErrorLogLevel level, string message)
         {
-            if (ErrorLevel <= level)
+            if (LoggerLevel <= level)
             {
                 using (var writer = OutFileName == null ?
                      DefaultWriter : new StreamWriter(File.Open(OutFileName, FileMode.Append)))
@@ -52,7 +52,7 @@ namespace backup
         {
             var sb = new StringBuilder();
             sb.Append("Loggersettings object:"+Environment.NewLine);
-            sb.Append($"ErrorLevel: {ErrorLevel}" + Environment.NewLine);
+            sb.Append($"LoggerLevel: {LoggerLevel}" + Environment.NewLine);
             sb.Append($"out File: {OutFileName ?? string.Empty}" + Environment.NewLine);
             return sb.ToString();
         }

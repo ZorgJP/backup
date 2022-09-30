@@ -23,6 +23,7 @@ namespace backup
             Logger.Info("backupper load success");
             EmulateFileBusiness("c:/1/11.txt");
             backuper.BackUp();
+            backuper.SerializeSettings();
             Console.WriteLine("done");
             Console.ReadKey();
         }

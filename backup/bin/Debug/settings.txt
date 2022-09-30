@@ -1,6 +1,4 @@
-log.txt
-Debug
-c:/dest
-c:/1
-c:/2
-c:/3
+LoggerLevel=Debug
+OutFileName=log.txt
+Destination=c:/dest
+Sources=c:/1, c:/2, c:/3

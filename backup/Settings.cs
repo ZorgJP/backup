@@ -14,7 +14,7 @@ namespace backup
     {
         public DirectoryInfo Destination { get; set; }
         public IEnumerable<DirectoryInfo> Sources{ get; set; }
-  
+
         public LoggerSettings Log { 
             get { return Logger.GetInstance(); } 
             set { Logger.SetInstance(value); } 
@@ -28,7 +28,8 @@ namespace backup
         public Settings(string destination, IEnumerable<string> source, LoggerSettings logger) : base()
         {
             Destination = new DirectoryInfo(destination);
-            Sources = source.Select(s => new DirectoryInfo(s));
+            //Sources = source.Select(s => new DirectoryInfo(s));
+            Sources = source.Select(s => new DirectoryInfo(s)).ToHashSet();
             Log = logger; 
             Logger.Debug("Settings object filled with data");
         }
@@ -59,7 +60,7 @@ namespace backup
                 var options = new JsonSerializerOptions
                 {
                     WriteIndented = true,
-                    Converters = { new DirectoryConverter() }
+                    Converters = { new JsonDirectoryInfoConverter() }
                 };
                 var jsonData = JsonSerializer.Serialize<Settings>(this, options);
                 File.WriteAllText("settings.json", jsonData);

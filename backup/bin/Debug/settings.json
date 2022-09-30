@@ -6,7 +6,7 @@
     "c:\\3"
   ],
   "Log": {
-    "ErrorLevel": 0,
+    "LoggerLevel": 0,
     "OutFileName": "log.txt"
   }
 }
